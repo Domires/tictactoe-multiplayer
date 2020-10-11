@@ -1,0 +1,52 @@
+* {
+    margin     : 0;
+    padding    : 0;
+    box-sizing : border-box;
+    font-family: sans-serif;
+}
+
+.ttt {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    height         : 100vh;
+    width          : 100vw
+}
+
+.container {
+    display         : grid;
+    width           : 250px;
+    background-color: black;
+    align-content   : center;
+    justify-content : center;
+    height          : 250px;
+    gap             : 5px;
+    grid-template   :
+        'c1l1 c2l1 c3l1'
+        'c1l2 c2l2 c3l2'
+        'c1l3 c2l3 c3l3';
+}
+
+.container>div {
+    display        : flex;
+    align-items    : center;
+    width          : 80px;
+    height         : 80px;
+    justify-content: center;
+    background     : #fff;
+    font-size      : 60px;
+    font-weight    : bolder;
+}
+
+.pontos {
+    padding: 60px;
+    font-size: 30px;
+    font-weight: bolder;
+    /* position: relative; */
+}
+
+.X, .O {
+    font-size: 20px;
+    font-weight: 100;
+    position: fixed;
+}
